@@ -1,0 +1,1107 @@
+.main{
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: rem(80px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @include tablets{
+        padding-top: rem(20px);
+    }
+    @include phones{
+        justify-content: flex-start;
+    }
+}
+
+.header__left{
+    display: flex;
+    font-size: rem(14px);
+    align-items: center;
+    @include phones{
+        margin-right: 10px;
+    }
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+
+    @include netbook{
+        font-size: rem(11px);
+    }
+}
+
+.logo__link{
+    display: flex;
+    color: $black;
+}
+
+.logo__img{
+    margin-right: rem(20px);
+    @include phones{
+        margin-right: 5px;
+    }
+}
+
+.logo__pic{
+    width: rem(60px);
+    height: rem(60px);
+
+    @include phones{
+        width: rem(40px);
+        height: rem(40px);
+    }
+}
+
+.name{
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        font-size: rem(13px);
+    }
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+.nav{
+    @include tablets{
+        display: none;
+    }
+
+    @include phones{
+        display: none;
+    }
+
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav__item{
+    margin-right: rem(20px);
+}
+
+.nav__link{
+    color: $black;
+    font-size: rem(18px);
+    font-family: Lato;
+    font-weight: 500;
+
+    &:hover{
+        border-bottom: rem(2px) #d9141c solid;
+    }
+
+    @include netbook{
+        font-size: rem(14px);
+    }
+    @include tablets{
+        font-size: rem(18px);
+        color: $white;
+    }
+
+    @include phones{
+        font-size: rem(14px);
+        color: $white;
+    }
+}
+
+.btn{
+    color: #ffffff;
+    font-weight: 500;
+    background-color: $red;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: rem(10px);
+    border-radius: rem(10px);
+
+    &:hover{
+        background-color: darken($red, 10%)
+    }
+
+    @include phones{
+        font-size: rem(10px);
+        padding: rem(5px);
+        border-radius: rem(5px);
+    }
+  
+}
+
+.block{
+    padding: rem(100px);
+    @include tablets{
+        padding-left: rem(30px);
+    }
+    @include phones{
+        padding-left: rem(30px);
+    }
+}
+
+.block__img{
+    width: rem(400px);
+    height: rem(270px);
+}
+
+.title{
+    font-size: rem(45px);
+    font-family: 'Lato';
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: rem(40px);
+    display: flex;
+    text-align: center;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    @include netbook{
+        font-size: rem(30px);
+    }
+    @include tablets{
+        font-size: rem(25px);
+    }
+    @include phones{
+        font-size: rem(22px);
+    }
+}
+
+.subtitle{
+    font-family: 'Lato';
+    font-weight: normal;
+    font-style: italic;
+    font-size: rem(25px);
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    @include netbook{
+        font-size: rem(20px);
+    }
+
+    @include tablets{
+        font-size: rem(18px);
+    }
+    @include phones{
+        font-size: rem(14px);
+    }
+}
+
+//about
+.about{
+    background: $gray;
+    min-height: rem(500px);
+    height: rem(500px);
+    display: flex;
+    flex-direction: column;
+}
+
+.about__title, .work__title, .criteria__title, .services__title, .guarantee__title, .price__title, .contacts__title, .request__title{
+    font-size: rem(40px);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding: rem(30px) 0;
+
+    @include netbook{
+        font-size: rem(30px);
+    }
+
+    @include tablets{
+        font-size: rem(25px);
+    }
+    @include phones{
+        font-size: rem(20px);
+    }
+}
+
+.about__block{
+    color: #8c9398;
+    font-family: Lato;
+    font-weight: 600;
+    padding: 0px rem(100px);
+    display: flex;
+    align-items: center;
+
+    @include tablets{
+        padding: 0 rem(30px);
+    }
+
+    @include phones{
+        display: block;
+        padding: 0 rem(5px);
+    }
+}
+
+.about__pic{
+    margin-right: rem(30px);
+    @include phones{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.about__img{
+    width: rem(500px);
+    height: rem(250px);
+
+    @include tablets{
+        width: rem(350px);
+        height: rem(250px);
+    }
+    @include phones{
+        width: rem(250px);
+        height: rem(150px);
+    }
+}
+
+.about__desc p{
+    text-indent: rem(25px);
+
+    @include netbook{
+        font-size: rem(14px);
+    }
+    @include phones{
+        font-size: rem(12px)
+    }
+}
+
+//work
+.work{
+    display: flex;
+    flex-direction: column;
+}
+
+.work__subtitle{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: rem(50px);
+
+    @include tablets{
+        font-size: rem(14px);
+        margin-bottom: rem(100px);
+    }
+    @include phones{
+        font-size: rem(12px);
+        margin-bottom: rem(20px);
+    }
+}
+
+.work__block{
+    padding: 0 rem(80px);
+    @include tablets{
+        padding: 0 rem(20px);
+    }
+    @include phones{
+        padding: 0 rem(5px);
+    }
+}
+
+.work__list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.work__item{
+    display: flex;
+    width: 30%;
+    margin-bottom: rem(70px);
+
+    @include phones{
+        width: 45%;
+    }
+}
+
+.work__item-img{
+    width: rem(100px);
+    height: rem(100px);
+    margin-right: rem(30px);
+
+    @include netbook{
+        width: rem(80px);
+        height: rem(80px);
+    }
+
+    @include tablets{
+        width: rem(50px);
+        height: rem(50px);
+    }
+    @include phones{
+        width: rem(35px);
+        height: rem(35px);
+    }
+}
+
+.work__item-title{
+    font-weight: bold;
+    font-size: rem(24px);
+    position: relative;
+    margin-bottom: rem(20px);
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: rem(-5px);
+        left: 0;
+        width: rem(100px);
+        height: rem(3px);
+        background-color: #000;
+        margin: 0 auto;
+
+        @include netbook{
+            width: rem(60px);
+        }
+
+        @include tablets{
+            width: rem(30px);
+        }
+        @include phones{
+            width: rem(30px);
+        }
+    }
+
+    @include netbook{
+        font-size: rem(20px);
+    }
+    @include tablets{
+        font-size: rem(12px);
+    }
+    @include phones{
+        font-size: rem(12px);
+    }
+}
+
+.work__item-text{
+    font-style: italic;
+    font-size: rem(14px);
+
+    @include netbook{
+        font-size: rem(12px);
+    }
+
+    @include tablets{
+        font-size: rem(10px);
+    }
+
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+//criteria
+.criteria__title{
+    font-size: rem(35px);
+
+    @include netbook{
+        font-size: rem(30px);
+    }
+
+    @include tablets{
+        font-size: rem(20px);
+    }
+    @include phones{
+        font-size: rem(15px);
+        margin-bottom: rem(30px);
+    }
+}
+.criteria{
+    background: $gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.criteria__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 rem(60px);
+}
+
+.criteria__block{
+    display: flex;
+}
+
+.criteria__item{
+    margin-bottom: rem(20px);
+    list-style-type: disc;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    @include netbook{
+        font-size: rem(14px);
+    }
+    @include tablets{
+        font-size: rem(12px);
+    }
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+.criteria__img{
+    width: rem(500px);
+    @include tablets{
+        width: (300px);
+    }
+    @include phones{
+        display: none;
+    }
+}
+
+//services
+.services{
+    display: flex;
+    flex-direction: column;
+    min-height: rem(950px);
+    height: rem(950px);
+}
+
+.services__block{
+    display: flex;
+}
+
+.services__list, .services__list2{
+    padding: 0 rem(50px);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-style: italic;
+    font-family: Lato;
+    color: #555555;
+    @include phones{
+        padding: 0 rem(20px);
+    }
+}
+
+.services__item{
+    margin-bottom: rem(30px);
+    list-style-type: circle;
+
+    @include netbook{
+        font-size: rem(14px);
+    }
+
+    @include tablets{
+        font-size: rem(12px);
+    }
+
+    @include phones{
+        font-size: rem(9px);
+    }
+}
+
+//guarantee
+.guarantee{
+    background: $gray;
+    display: flex;
+    flex-direction: column;
+    height: rem(500px);
+    min-height: rem(500px);
+}
+
+.guarantee__list{
+    display: flex;
+    padding: 0 rem(40px);
+    justify-content: space-around;
+}
+
+.guarantee__item{
+    width: 30%;
+    text-align: center;
+}
+
+
+.guarantee__img{
+    width: rem(100px);
+    height: rem(100px);
+
+    @include netbook{
+        width: rem(80px);
+        height: rem(80px);
+    }
+    @include phones{
+        width: rem(45px);
+        height: rem(45px);
+    }
+}
+
+.guarantee__item-title{
+    font-size: rem(24px);
+    font-family: Lato;
+    font-weight: bold;
+    margin-bottom: rem(30px);
+
+    @include netbook{
+        font-size: rem(20px);
+    }
+
+    @include tablets{
+        font-size: rem(18px);
+    }
+
+    @include phones{
+        font-size: rem(14px);
+    }
+}
+
+.guarantee__desc{
+    @include netbook{
+        font-size: rem(14px);
+    }
+    @include tablets{
+        font-size: rem(12px);
+    }
+    @include phones{
+        font-size: rem(8px);
+    }
+}
+
+//price
+.price{
+    background: url('../images/price-bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.price__block{
+    background-color: rgba(0,0,0,0.8);
+    color: $white;
+    width: 100%;
+    text-align: center;
+}
+
+.price__subtitle{
+    font-size: rem(22px);
+
+    @include netbook{
+        font-size: rem(18px);
+    }
+    @include tablets{
+        font-size: rem(14px);
+    }
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+.price__value{
+    font-weight: bold;
+    font-size: rem(50px);
+    margin: rem(75px) 0;
+
+    @include netbook{
+        font-size: rem(40px);
+        margin: rem(55px) 0;
+    }
+
+    @include tablets{
+        font-size: rem(30px);
+        margin: rem(40px) 0;
+    }
+    @include phones{
+        font-size: rem(20px);
+        margin: rem(30px) 0;
+    }
+
+}
+
+.price__text {
+    font-style: italic;
+    font-size: rem(20px);
+    flex-direction: column;
+
+    & p{
+        margin: 0;
+
+        @include tablets{
+            font-size: rem(14px);
+        }
+        @include phones{
+            font-size: rem(10px);
+        }
+    }
+
+    @include tablets{
+        margin-bottom: rem(50px);
+    }
+    @include phones{
+        margin-bottom: rem(20px);
+    }
+}
+
+.price__ps{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: rem(20px);
+    font-style: italic;
+
+    @include tablets{
+        margin-bottom: rem(30px)
+    }
+    @include phones{
+        margin-bottom: rem(20px);
+    }
+}
+
+.price__ps-img{
+    width: rem(80px);
+    height: rem(80px);
+
+    @include netbook{
+        width: rem(60px);
+        height: rem(60px);
+    }
+
+    @include tablets{
+        width: rem(40px);
+        height: rem(40px);
+    }
+    @include phones{
+        width: rem(30px);
+        height: rem(30px);
+    }
+}
+
+.prise__ps-text{
+    @include netbook{
+        font-size: rem(18px);
+    }
+    @include tablets{
+        font-size: rem(14px);
+    }
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+.price__alert{
+    display: flex;
+    padding: 0 rem(100px);
+    @include phones{
+        padding: 0 rem(30px);
+    }
+}
+
+.price__alert-pic{
+    margin-right: rem(30px);
+    @include phones{
+        margin-right: rem(10px);
+    }
+}
+
+.price__alert-img{
+    width: rem(100px);
+    height: rem(100px);
+
+    @include netbook{
+        width: rem(80px);
+        height: rem(80px);
+    }
+
+    @include tablets{
+        width: rem(50px);
+        height: rem(50px);
+    }
+    @include phones{
+        width: rem(30px);
+        height: rem(30px);
+    }
+}
+
+.price__text{
+    font-size: rem(14px);
+    display: flex;
+    justify-content: center;
+
+    @include tablets{
+        font-size: rem(12px);
+    }
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+
+
+//programs
+.programs{
+    height: rem(350px);
+    min-height: rem(350px);
+    background: $gray;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: rem(60px);
+    grid-row-gap: rem(40px);
+    padding: rem(30px) rem(50px);
+    text-align: center;
+
+    @include tablets{
+        grid-row-gap: 0;
+    }
+
+    @include phones{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 0;
+        grid-column-gap: rem(20px);
+    }
+}
+
+.program{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.program img{
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+//contacts
+.contacts{
+    display: flex;
+    flex-direction: column;
+    height: rem(300px);
+    min-height: rem(300px);
+}
+
+.contacts__text1, .contacts__text2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-style: italic;
+
+    @include tablets{
+        font-size: rem(12px);
+    }
+    
+    @include phones{
+        font-size: rem(9px);
+    }
+}
+
+.contacts__text1-pic{
+    margin-right: rem(20px);
+}
+
+.contacts__text1-img, .contacts__phone-img{
+    width: rem(50px);
+    height: rem(50px);
+
+    @include phones{
+        width: rem(30px);
+        height: rem(30px);
+    }
+}
+
+.contacts__phone{
+    display: flex;
+    justify-content: center;
+
+    & p{
+        margin-right: rem(10px);
+
+        @include tablets{
+            font-size: rem(14px);
+        }
+        @include phones{
+            font-size: rem(8px);
+        }
+    }
+}
+
+.phone-link{
+    color: $black;
+    font-weight: bold;
+}
+
+//request
+.request{
+    background: $gray;
+    display: flex;
+    justify-content: center;
+    height: rem(500px);
+    min-height: rem(500px);
+}
+
+.part {
+    text-align: center;
+    width: 100%;
+    & h3{
+        text-align: center;
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(30px);
+}
+
+.form__elem{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.form__input{
+    color: $black;
+    border: rem(1px) solid $black;
+    height: rem(30px);
+    margin-bottom: rem(5px);
+
+}
+
+.btn-send{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn__submit{
+    cursor: pointer;
+    background: $red;
+    color: $white;
+    font-family: 'Times New Roman';
+    font-size: rem(16px);
+    font-style: italic;
+    padding: rem(10px);
+    border-radius: rem(5px);
+    transition: .3s;
+
+    &:hover{
+        background: darken($red, 10%)
+    }
+
+    @include phones{
+        font-size: rem(12px);
+    }
+}   
+
+.form-block{
+    margin-bottom: rem(70px);
+}
+
+.form__textarea{
+    height: rem(100px);
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-family: 'Times New Roman';
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+    font-family: 'Times New Roman';
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+    font-family: 'Times New Roman';
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+    font-family: 'Times New Roman';
+ }
+
+//footer
+.footer{
+    background: #232323;
+    color: $white;
+    height: rem(90px);
+    display: flex;
+    justify-content: space-around;
+
+    @include netbook{
+        font-size: rem(14px);
+    }
+
+    @include phones{
+        font-size: rem(10px);
+    }
+}
+
+.footer__left, .footer__right{
+    display: flex;
+    align-items: center;
+}
+
+.name--white{
+    color: $white;
+}
+
+
+
+
+// for form
+
+.popup{
+    display: none;
+}
+
+.status-popup{
+    width: rem(250px);
+}
+
+.status-popup__inner{
+    text-align: center;
+    padding: rem(16px);
+}
+
+.status-popup__message{
+    font-size: rem(12px);
+}
+
+//hamburger
+
+.hamburger__menu{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    // @include iphone5{
+    //     top: 5%;
+    // }
+}
+
+.hamburger__menu-link{
+    vertical-align: middle;
+    position: relative;
+    height: 1.375rem;
+    align-items: center;
+    margin-left: 1.875rem;
+    display: none;
+    z-index: 100;
+
+    @include tablets{
+        display: inline-flex;
+    }
+    @include phones{
+        display: flex;
+    }
+    
+}
+
+.hamburger__bars {
+	&, &:before, &:after {
+		background: $white;
+		width: rem(38px);
+        height: rem(5px);
+		border-radius: 3px;
+	}
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+
+	&:before {
+        top: 1%;
+        // @include iphone5{
+        //     top: -2%;
+        // }
+	}
+
+	&:after {
+		bottom: 1%;
+    }
+}
+
+.hamburger__menu-link.is-active .hamburger__bars{
+    background: transparent;
+    &:before {
+      transform: translateY(10px) translateX(0) rotate(45deg);
+      border-radius: 5px; 
+    
+      @include phones{
+        transform: translateY(10px) translateX(0) rotate(45deg);
+      }
+    //   @include iphone5{
+    //     transform: translateY(12px) translateX(0) rotate(45deg);
+    //   }
+    }
+
+    &:after {
+      transform: translateY(-6px) translateX(0) rotate(-45deg);
+      border-radius: 5px; 
+    }
+  }
+
+
+body.locked {
+    overflow: hidden;
+}
+.dark-menu{
+    position: absolute;
+    left: -9999px;
+    right: 0;
+    background: $dark;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 10;
+}
+
+.dark-menu.is-active {
+    display: flex;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.nav_hamburger {
+    width: auto;
+
+    @include tablets{
+        display: block;
+    }
+}
+
+.nav__listt {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav_hamburger .nav__listt {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav__item_hamburger {
+    display: inline;
+    text-align: center;
+    animation-fill-mode: forwards;
+    transition: opacity .3s;
+    font-size: rem(30px);
+
+    &:last-child {
+		margin-right: 0;
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.nav_hamburger .nav__link {
+    font-size: rem(24px);
+}
+

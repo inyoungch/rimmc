@@ -1,0 +1,214 @@
+extends ../template
+
+block variables
+    - var title = 'Regular Immigration Centre';
+
+block content
+    .wrapper
+        section.main
+            header.header
+                .header__left
+                    .logo
+                        a.logo__link(href="/")
+                            .logo__img
+                                img.logo__pic(src="assets/images/logo.png", alt="Logo")
+                            .name
+                                .name1 Regular
+                                .name2 Immigration
+                                .name3 Centre
+                .header__right
+                    nav.nav
+                        ul.nav__list
+                            li.nav__item
+                                a.nav__link(href="#about") О нас
+                            li.nav__item
+                                a.nav__link(href="#work") Этапы работы
+                            li.nav__item
+                                a.nav__link(href="#criteria") Критерии
+                            li.nav__item
+                                a.nav__link(href="#services") Услуги
+                            li.nav__item
+                                a.nav__link(href="#guarantee") Гарантии
+                            li.nav__item
+                                a.nav__link(href="#price") Стоимость
+                            li.nav__item
+                                a.nav__link(href="#contacts") Мы находимся
+                    a.btn(href="#request") Оставить заявку
+            .block
+                .title.animated.fadeInDown Иммиграционный Центр #[br] "RIMMC"
+                .subtitle.animated.fadeInLeft Лучшие иммиграционные программы Канады
+        section.about#about
+            .about__title О нас
+            .about__block
+                .about__pic
+                    img.about__img(src="assets/images/centre.jpg", alt="Centre")
+                .about__desc
+                    p Иммиграционный Центр "RIMMC" - это зарегистрированная компания на территории Республики Казахстан и Российской Федерации. Мы оказываем посреднические услуги для всех, кто желает переехать на постоянное место жительство в Канаду. С уверенностью можем сказать, что вы получите полное сопровождение вашего иммиграционного кейса на максимально выгодных для вас условиях. 
+                    p Лучшие учебные заведения Канады готовы принимать студентов из Казахстана и стран СНГ. Используйте уникальную возможность учить английский язык, получить профессию и опыт работы в канадских компаниях подав заявку на нашем сайте.
+        section.work#work
+            .work__title Этапы работы
+            .work__subtitle Последовательность выполнения заказа
+            .work__block
+                ul.work__list
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/1.png", alt="1")
+                        .work__item-desc
+                            .work__item-title Оставьте заявку
+                            .work__item-text Отправьте заявку и мы свяжемся с вами в течении 3 рабочих дней.
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/2.png", alt="2")
+                        .work__item-desc
+                            .work__item-title Консультация
+                            .work__item-text Наш специалист бесплатно проконсультирует вас по вопросам иммиграции.
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/3.png", alt="3")
+                        .work__item-desc
+                            .work__item-title Оценка шансов
+                            .work__item-text Уточняем соответствие по всем критериям и даем рекомендации.
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/4.png", alt="4")
+                        .work__item-desc
+                            .work__item-title Документация
+                            .work__item-text Мы подготовим все требуемые документы и утвердим их с вами.
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/5.png", alt="5")
+                        .work__item-desc
+                            .work__item-title Выполнение заказа
+                            .work__item-text Выполнение всех работ с нашей стороны под вашим наблюдением.
+                    li.work__item
+                        .work__item-pic
+                            img.work__item-img(src="assets/images/icons/6.png", alt="6")
+                        .work__item-desc
+                            .work__item-title Завершение работы
+                            .work__item-text В запланированные сроки вы иммигрируете или мы вернем ваши средства.
+        section.criteria#criteria
+            .criteria__title Иммиграционные критерии отбора претендентов по канадским программам:
+            .criteria__block
+                .criteria__desc
+                    ul.criteria__list
+                        li.criteria__item.animated.zoomIn Наличие образования (ПТУ, Колледж, ВУЗ) или уникального опыта подтвержденного документально (столяр краснодеревщик и т.п.);
+                        li.criteria__item.animated.zoomIn Опыт работы не менее 2 лет;
+                        li.criteria__item.animated.zoomIn Знание английского или французского языков; необходимо подтвердить сертификатом;
+                        li.criteria__item.animated.zoomIn Отсутствие судимости (подтвержденное справкой о несудимости);
+                        li.criteria__item.animated.zoomIn Финансовая состоятельность (помимо оплаты наших услуг, вам необходимо иметь средства для основного заявителя 10.000 CAD и по 2.000 CAD на каждого члена семьи). Вы можете иметь недвижимость или любое имущество, которое возможно оценить на эту сумму;
+                        li.criteria__item.animated.zoomIn Ваш возраст от 21 года до 45 лет;
+                        li.criteria__item.animated.zoomIn Отсутствие инвалидности, психических расстройств и других тяжёлых заболеваний (ВИЧ, туберкулез и т.д.).
+                .criteria__pic
+                    img.criteria__img(src="assets/images/criteria.jpg", alt="criteria")
+        section.services#services
+            .services__title Наши услуги после подписания договора:
+            .services__block
+                ul.services__list
+                    li.services__item Устные консультации по всем вопросам, касающимся оформления по иммиграционным программам (не более 50-ти);
+                    li.services__item Письменные справки по всем вопросам, касающимся оформления по иммиграционным программам (не более 20-ти);
+                    li.services__item Консультационная помощь в подготовке всех необходимых документов для подачи заявки на участие в иммиграционных программах страны назначения;
+                    li.services__item Перевод всех необходимых документов для подачи заявки на участие в иммиграционных программах страны назначения на английский или французский языки с последующим нотариальным заверением. Если клиент работает с компанией дистанционно, компания возмещает клиенту стоимость переводов и нотариальных заверений согласно предоставленным чекам или квитанциям об оплате от переводчиков и нотариуса, которых нанимал клиент;
+                    li.services__item Консультационная помощь в осуществлении процесса эвалюации дипломов клиента;
+                    li.services__item Подбор наиболее подходящей иммиграционной программы исходя из требований иммиграционной программы и личных показателей клиента и членов его семьи, учитывая предпочтения и запросы клиента. Предпочтения и запросы клиента не должны выходить за рамки условий предоставляемые иммиграционными службами страны назначения и полномочиями компании. Также предпочтения и запросы клиента не должны противоречить Нормам Закона Республики Казахстан и Международным Правовым Нормам и Соглашениям;
+                    li.services__item Подбор наиболее подходящей провинции/штата/города назначения основанный на требования данной провинции/штата/города и ёё иммиграционной программе, а также личных показателей клиента и членов его семьи;
+                ul.services__list2
+                    li.services__item Помощь с подбором наиболее подходящего кода  NOC CODE (код, присваиваемый каждой специальности согласно канадскому классификатору профессий);
+                    li.services__item Подача заявления в иммиграционные службы страны назначения от имени клиента и членов его семьи на участие в иммиграционных программах. В данную услугу входит создание профиля в системе EXPRESS ENTRY и создание профиля в других последующих порталах иммиграционных служб страны назначения;
+                    li.services__item Подготовка клиента к интервью. Обсуждение всех возможных вопросов и подготовка наиболее правильной модели поведения на интервью или во время собеседования в рамках информационно-выездной сессии;
+                    li.services__item Информационное сопровождения клиента в период прохождения медицинской комиссии и в процессе подачи документов на получение виз;
+                    li.services__item Информационная поддержка клиента в период приобретения авиабилетов и выбора наиболее подходящего маршрута с точки зрения стоимости и периода перелета, выбора авиакомпании и т.д.;
+                    li.services__item Помощь в поиске работы, арендного или покупаемого жилья (клиенту предоставляются контакты риелторов, рекрутинговых компаний работающих в регионе пребывания). В том числе компания может предоставить клиенту специалистов способных обслужить на русском языке;
+                    li.services__item Информационная поддержка по таким вопросам, как: получение карты постоянного резидента (permanent resident card), оформление пособий, регистрация на бесплатные курсы английского языка для новоприбывших, приобретение бесплатного печатного издания для новоприбывших, в том числе и на русском языке.
+        section.guarantee#guarantee
+            .guarantee__title Гарантии легального бизнеса
+            .guarantee__block
+                ul.guarantee__list
+                    li.guarantee__item
+                        .guarantee__item-block
+                            .guarantee__pic
+                                img.guarantee__img(src="assets/images/icons/1g.png", alt="1")
+                            .guarantee__item-title Все законно
+                        .guarantee__desc Наша компания прошла официальную регистрацию в Государственных Органах Республики Казахстан И РФ. Поэтому каждому клиенту мы предлагаем посетить наш офис для консультаций и подписания договора. Мы предоставляем всю информацию о нас. Вам будет не сложно проверить легальность нашей компании.
+                    li.guarantee__item
+                        .guarantee__item-block
+                            .guarantee__pic
+                                img.guarantee__img(src="assets/images/icons/2g.png", alt="2")
+                            .guarantee__item-title Договор
+                        .guarantee__desc Все наши гарантии не только на словах. Перед началом оформления мы подписываем договор. Тем самым принимая на себя официальные обязательства на выполнение условий. Подписывая договор с зарубежными компаниями вы рискуете лишиться каких-либо гарантий. 
+                    li.guarantee__item
+                        .guarantee__item-block
+                            .guarantee__pic
+                                img.guarantee__img(src="assets/images/icons/3g.png", alt="3")
+                            .guarantee__item-title Гарантии
+                        .guarantee__desc Мы всегда выполняем обязательства возложенные на нас по договору. Никто не имеет право давать 100% гарантию иммиграции. Но в нашей компетенции вернуть ваши средства, если вы не иммигрируете.
+        section.price#price
+            .price__block
+                .price__title Cтоимость услуг
+                .price__subtitle Оплата за услуги производится в течении 3 рабочих дней с момента подписания договора.
+                .price__value 4,500 USD
+                .price__text 
+                    p Предоплата на момент подписания договора - 3,200 USD.
+                    p Остаток - 1,300USD оплачивается в Канаде по факту иммиграции.
+                .price__ps
+                    .price__ps-pic
+                        img.price__ps-img(src="assets/images/icons/money.png", alt="refund")
+                    .prise__ps-text предусмотрен возврат средств в случае 3 задокументированных отказов.
+                .price__alert
+                    .price__alert-pic
+                        img.price__alert-img(src="assets/images/icons/alert.png", alt="alert")
+                    .price__text Будьте бдительны: оплачивая услуги иностранных компаний и адвокатов, которые находятся за границей вы лишаетесь гарантии возврата денег и возможности предъявлять претензии за нарушение условий договора. все звонки из торонто, ванкувера, лондона и других иностранных городов на ваш номер могут производиться с арендованных номеров. требуйте визита в офис компании.
+        section.programs
+            .program
+                img.program__img(src="assets/images/logo2.png", alt="1")
+            .program
+                img.program__img(src="assets/images/Air-Canada.png", alt="Air Canada")
+            .program
+                img.program__img(src="assets/images/manitoba.png", alt="Manitoba")
+            .program
+                img.program__img(src="assets/images/canadian-tourism.png", alt="Canadian tourism")
+            .program
+                img.program__img(src="assets/images/alberta.png", alt="Alberta")
+            .program
+                img.program__img(src="assets/images/brc.png", alt="BRC")
+            .program
+                img.program__img(src="assets/images/Saskatchewan.png", alt="Saskatchewan")
+            .program
+                img.program__img(src="assets/images/quebec.png", alt="Quebec")
+        section.contacts#contacts
+            .contacts__title Наши адреса
+            .contacts__text1
+                .contacts__text1-pic
+                    img.contacts__text1-img(src="assets/images/icons/russia.png", alt="Russia")
+                p Россия г.Москва ул.Льва Толстого 16 БЦ "МОРОЗОВ" ОФИС 304
+            .contacts__text2
+                .contacts__text1-pic
+                    img.contacts__text1-img(src="assets/images/icons/kz.png", alt="Kazakhstan")
+                p Республика Казахстан г. Караганда ул.Ленина, 81/3 БЦ "КРИСТАЛЛ"офис 208
+            .contacts__phone
+                p ПРОСИМ ВАС ЗАРАНЕЕ ЗАПИСЫВАТЬСЯ НА СОБЕСЕДОВАНИЕ ПО НОМЕРУ: #[a.phone-link(href="tel:+77212369755") +7 707 854 70 45]
+                .contacts__phone-pic
+                    img.contacts__phone-img(src="assets/images/icons/whatsapp.png", alt="WhatsApp")
+        section.request#request
+            .part
+                h3.request__title Оставьте заявку
+                .form
+                    form.form__elem#form__elem(action="server.php", method="post")
+                        input.form__input#user-name(type="text" name="user-name" placeholder="Ваше Имя *" required)
+                        input.form__input#user-mail(type="text" name="user-mail" placeholder="Email *" required)
+                        input.form__input.phone-mask#user-phone(type="text" name="user-phone" placeholder="Телефон *" required)
+                        input.form__input#user-theme(type="text" name="user-theme" placeholder="Тема")
+                        textarea.form__input.form__textarea#comment(type="text" name="comment" placeholder="Сообщение *" required)
+                        .btn-send
+                            button.btn__submit.order__btn(type="submit") Отправить
+        footer.footer
+            .footer__left
+                .copyright © RIMMC 2003 - 2019. Все права защищены.
+            .footer__right
+                .logo
+                    a.logo__link(href="/")
+                        .logo__img
+                            img.logo__pic(src="assets/images/logo.png", alt="Logo")
+                        .name.name--white
+                            .name1 Regular
+                            .name2 Immigration
+                            .name3 Centre

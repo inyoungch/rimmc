@@ -1,0 +1,75 @@
+//vars
+$white:#fff;
+$black:#111111;
+$gray:#f3f5f8;
+$red:#d9141c;
+$dark:#2f3234;
+
+$netbook:1024px;
+$tablets:768px;
+$phones:480px;
+$iphone5:320px;
+
+//mixin
+
+@mixin dot{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+@function rem($px){
+    @return $px  / 16px+0rem;
+}
+
+// @mixin netbook{
+//     @media screen and (max-width:$netbook){
+//         @content;
+//     }
+// }
+
+// @mixin tablets{
+//     @media screen and (max-width:$tablets){
+//         @content;
+//     }
+// }
+
+// @mixin phones{
+//     @media screen and (max-width:$phones){
+//         @content;
+//     }
+// }
+
+// @mixin iphone5{
+//     @media screen and (max-width:$iphone5){
+//         @content;
+//     }
+// }
+
+// @mixin iphone5{
+//     @media (max-width:319px){
+//         @content;
+//     }
+// }
+
+@mixin phones{
+    @media (min-width:240px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin tablets{
+    @media (min-width:479px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin netbook{
+    @media (min-width:768px) and (max-width:1024px){
+        @content;
+    }
+}

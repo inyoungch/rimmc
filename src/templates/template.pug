@@ -1,0 +1,55 @@
+block variables
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title} 
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css')
+        link(rel='stylesheet' href='assets/styles/app.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        
+        
+    body
+        block content
+
+        .status-popup.popup#success
+            .status-popup__inner
+                .status-popup__message Сообщение отправлено
+        .status-popup.popup#error
+            .status-popup__inner
+                .status-popup__message Произошла ошибка
+
+        .hamburger__menu
+            a.hamburger__menu-link#hamburger__menu-link(href="#")
+                .hamburger__bars
+        .dark-menu#dark-menu
+            .dark-menu__items
+                nav.nav_hamburger
+                ul.nav__listt#nav__list_hamburger
+                    li.nav__item_hamburger
+                        a.nav__link(href="#about") О нас
+                    li.nav__item_hamburger
+                        a.nav__link(href="#work") Этапы работы
+                    li.nav__item_hamburger
+                        a.nav__link(href="#criteria") Критерии
+                    li.nav__item_hamburger
+                        a.nav__link(href="#services") Услуги
+                    li.nav__item_hamburger
+                        a.nav__link(href="#guarantee") Гарантии
+                    li.nav__item_hamburger 
+                        a.nav__link(href="#price") Стоимость
+                    li.nav__item_hamburger 
+                        a.nav__link(href="#contacts") Мы находимся
+
+        script(src='https://code.jquery.com/jquery-1.11.0.min.js')
+        script(src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js')
+        script(src='assets/scripts/bundle.js' defer)
+        
