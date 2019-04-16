@@ -4,21 +4,21 @@
 
 // slider(); // инициализируем слайдер
 
-// console.log("hello, world");
+console.log("hello, world");
 
-$(document).ready(function(){
-    $('.slider').slick({
-      autoplay:true
-    });
-  });
+// $(document).ready(function(){
+//     $('.slider').slick({
+//       autoplay:true
+//     });
+//   });
 
 
-  $(function() {
-    var url=document.location.href;
-    $('.nav__list a').each(function(e) {
-      if (this.href == url) $(this).addClass('active');
-    });
-    });
+//   $(function() {
+//     var url=document.location.href;
+//     $('.nav__list a').each(function(e) {
+//       if (this.href == url) $(this).addClass('active');
+//     });
+//     });
 
 //wow
 new WOW().init();
@@ -58,6 +58,7 @@ $status = $(popup)
 //       form.trigger('reset');
 //     }
 //   });
+
   $.fancybox.open($status, {
     type: 'inline',
     maxWidth: 250,

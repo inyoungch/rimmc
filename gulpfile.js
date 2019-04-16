@@ -44,6 +44,10 @@ const paths = {
         src: 'src/fonts/**/*.*',
         dest: 'build/assets/fonts/'
     },
+    serverFile: {
+        src: 'src/server.php',
+        dest: 'build/'
+    },
 }
 
 // pug
@@ -116,6 +120,12 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+// просто переносим server.php
+function serverFile() {
+    return gulp.src(paths.serverFile.src)
+        .pipe(gulp.dest(paths.serverFile.dest));
+}
+
 //svg
 function svgSpriteBuild() {
     return gulp.src('src/images/icons/*.svg')
@@ -153,9 +163,10 @@ exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
 exports.fonts = fonts;
+exports.serverFile = serverFile;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, scripts, fonts,svgSpriteBuild),
+    gulp.parallel(styles, templates, images, scripts, fonts, serverFile, svgSpriteBuild),
     gulp.parallel(watch, server)
 ));
